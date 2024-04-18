@@ -1,0 +1,1295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ---------------------------------header1 start --------------------------------------------- */
+.firststheader_menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav1{
+    float: right;
+}
+
+.firststheader_menu li a {
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    font-weight: 400;
+}
+
+.top_hdr_li1{
+    border-right: 2px solid #e3e3e3;
+}
+
+ul.firststheader_menu {
+    padding: 4px 0;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+@media only screen and (max-width: 900px){
+    .header-1{
+        display: none;
+    }
+}
+
+/* ---------------------------------header1 end --------------------------------------------- */
+
+
+/* ---------------------------------header2 start --------------------------------------------- */
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 4;
+  }
+
+
+  .logo {
+    margin-left: 64px;
+}
+  
+  .navigation-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    flex-grow: 1;
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  span.hamburger-toggle-button {
+ 
+    background-color: rgb(0, 0, 0);
+}
+  .menu {
+    display: inherit;
+  }
+  
+  .menu > ul {
+    display: inherit;
+  }
+  
+  .menu > ul > li > span > a > span {
+    display: inline-block;
+    /*padding-right: 0.5em;*/
+  }
+  
+  .menu > ul > li > a,
+  .menu > ul > li > span > a {
+    display: block;
+    color: #000000;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .menu > ul > li > a:hover,
+  .menu > ul > li > span > a:hover {
+    background-color: #ffffff;  
+  }
+  
+  .menu > ul > li {
+    position: relative;
+    margin-right: 0.25em;
+    margin-left: 0.25em;
+  }
+  
+  .menu ul ul {
+    width: 242px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  
+  .arrow-down-icon {
+    display: inline-block;
+    color: #fff;
+ }
+  
+ nav.menu {
+    margin-right: 23px;
+}
+  .icon-wrapper {
+    display: inline-block;
+  }
+  
+  li {
+    position: relative;
+  }
+  
+  .menu ul ul li {
+    margin-right: 5px;
+    display: block;
+  }
+  
+  .menu ul ul li a {
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    padding: 0.45em;
+    margin: 0.25em;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .menu > ul > li:hover ul {
+    display: block;
+  }
+  
+  .menu > ul > li ul a:hover {
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .hamburger-toggle-button {
+    position: relative;
+    display: none;
+    width: 40px;
+    height: 38px;
+    padding: 0.30rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.15s;
+    -webkit-transition: 0.15s;
+  }
+  
+  .hamburger-toggle-button:hover {
+    background-color: #000000;
+  }
+  
+  .nav-drawer {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
+    background-color: #e7e5e5;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    z-index: 5;
+  }
+  
+  .nav-drawer.active {
+    left: 0;
+  }
+  
+  .nav-drawer.inactive {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+  }
+  
+  .menu > ul > li{
+    list-style-type: none;
+}
+
+  .close-button {
+    display: inline-flex;
+    align-self: flex-end;
+    padding: 0.5rem;
+    margin: 2.5vw;
+    border-radius: 50%;
+    background-color: transparent;
+    outline: 1px solid #cfcece;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    border: none;
+    cursor: pointer;
+    height: 2.25rem;
+    width: 2.25rem;
+    transition: 0.15s;
+    -webkit-transition: 0.15s;
+  }
+  
+  .close-button:hover {
+    background-color: #e32231;
+    outline: none;
+  }
+  
+  .close-button:active {
+    background-color: #ba1824;
+    outline: none;
+  }
+  
+  .close-button-icon {
+    transition: 0.15s;
+    -webkit-transition: 0.15s;
+    stroke: #000;
+  }
+  
+  .close-button-icon-hovered {
+    stroke: #fff;
+  }
+  
+  .nav-drawer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 10px 10px 10px 22px;
+    padding: 0;
+  }
+  
+  .nav-drawer ul li {
+    margin: 20px 0;
+  }
+  
+  .nav-drawer ul li a {
+    padding: 0.5em 1em 0.5em 1em;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  
+ 
+  
+  .nav-drawer > .triangular-arrow {
+    display: inline-block;
+  }
+  
+  .arrow {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .nav-drawer .treeview > .nested li {
+    margin: 5px 0 0 0;
+  }
+  
+  .treeview.disabled > .nested {
+    display: none;
+  }
+  
+  .treeview.active > .nested {
+    display: inline-block;
+  }
+  
+  .arrow-down {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+  }
+  
+  .treeview-wrapper {
+    display: block;
+    cursor: pointer;
+    margin-left: -18px;
+    user-select: none;
+  }
+  
+  @media (max-width: 992px) {
+     
+  
+    .menu {
+      display: none;
+    }
+  
+    .hamburger-toggle-button {
+      display: block;
+    }
+  
+    .nav-drawer {
+      width: 80%;
+      max-width: none;
+    }
+  
+    .nav-drawer ul > li {
+      margin: 10px 0;
+    }
+      .nav-drawer .treeview ul {
+      margin-top: 1em;
+    }
+  }
+
+  
+/* ---------------------------------header2 end --------------------------------------------- */
+
+/* ----------------------------Carousel--------------------------- */
+#news-slider{
+    margin-top: 80px;
+}
+.post-slide{
+    margin: 20px 15px 20px;
+    border-radius: 15px;
+    padding-top: 1px;
+}
+.post-slide .post-img{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: -12px 15px 8px 15px;
+    margin-left: -10px;
+}
+.post-slide .post-img img{
+    width: 100%;
+    height: auto;
+    transform: scale(1,1);
+    transition:transform 0.2s linear;
+}
+.post-slide:hover .post-img img{
+    transform: scale(1.1,1.1);
+}
+.post-slide .over-layer{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    background: linear-gradient(-45deg, rgba(6,190,244,0.75) 0%, rgba(45,112,253,0.6) 100%);
+    transition:all 0.50s linear;
+}
+.post-slide:hover .over-layer{
+    opacity:1;
+    text-decoration:none;
+}
+.post-slide .over-layer i{
+    position: relative;
+    top:45%;
+    text-align:center;
+    display: block;
+    color:#fff;
+    font-size:25px;
+}
+.post-slide .post-content{
+    background:#fff;
+    padding: 2px 20px 40px;
+    border-radius: 15px;
+}
+.post-slide .post-title a{
+    font-size:15px;
+    font-weight:bold;
+    color:#333;
+    display: inline-block;
+    text-transform:uppercase;
+    transition: all 0.3s ease 0s;
+}
+.post-slide .post-title a:hover{
+    text-decoration: none;
+    color:#3498db;
+}
+.post-slide .post-description{
+    line-height:24px;
+    color:#808080;
+    margin-bottom:25px;
+}
+.post-slide .post-date{
+    color:#a9a9a9;
+    font-size: 14px;
+}
+.post-slide .post-date i{
+    font-size:20px;
+    margin-right:8px;
+    color: #CFDACE;
+}
+.post-slide .read-more{
+    padding: 7px 20px;
+    float: right;
+    font-size: 12px;
+    background: #2196F3;
+    color: #ffffff;
+    box-shadow: 0px 10px 20px -10px #1376c5;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+.post-slide .read-more:hover{
+    background: #3498db;
+    text-decoration:none;
+    color:#fff;
+}
+.owl-controls .owl-buttons{
+    text-align:center;
+    margin-top:20px;
+}
+.owl-controls .owl-buttons .owl-prev {
+    background: #fff;
+    position: absolute;
+    top: 41%;
+    left: -7px;
+    height: 50px;
+    width: 50px;
+    padding-top: 2px;
+    border-radius: 50px;
+    transition: background 0.5s ease 0s;
+}
+.owl-controls .owl-buttons .owl-next {
+    background: #fff;
+    position: absolute;
+    top: 41%;
+    right: -7px;
+    height: 50px;
+    width: 50px;
+    padding-top: 2px;
+    border-radius: 50px;
+    transition: background 0.5s ease 0s;
+}
+.owl-controls .owl-buttons .owl-prev:after,
+.owl-controls .owl-buttons .owl-next:after{
+    content:"\f104";
+    font-family: FontAwesome;
+    color: #333;
+    font-size:30px;
+}
+.owl-controls .owl-buttons .owl-next:after{
+    content:"\f105";
+}
+@media only screen and (max-width:1280px) {
+    .post-slide .post-content{
+        padding: 0px 15px 25px 15px;
+    }
+}
+
+
+.food_categories img{
+  width: 100%;
+  transition: transform .5s cubic-bezier(.215,.61,.355,1);
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    transform: translateZ(0);
+}
+
+.food_categories img:hover{
+transform: scale(1.05);
+}
+
+.food_categories_section {
+    background: url(metrocreateimages/crem-hp-back.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.you_tube_link{
+    border-radius: 20px;
+}
+
+.slidecontent h1 {
+    color: white;
+    font-size: 62px;
+}
+
+
+.slidecontent p {
+    color: white;
+}
+
+.slidecontent {
+    padding: 0 52px;
+}
+
+.slidecontent button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* ----------------------------Carousel--------------------------- */
+
+
+
+
+/* ---------------------section-2-start-------------------------------- */
+
+.medicalflx{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.medicalflx_row{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conter_icon {
+    text-align: center;
+    height: 135px;
+    background-color: #f5f5f5;
+    width: 135px;
+    padding-top: 32px;
+    border-radius: 50%;
+    
+}
+
+.medicalflx_bx{
+    width: 25%;
+}
+
+.counter_pargp{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+   
+}
+
+.conter_heading{
+        text-align: center;
+        margin-top: 1.5rem;
+}
+
+.medicalflx_bx .conter_heading .title{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .medicalflx_bx{
+        width: 100%;
+    }
+}
+
+/* ---------------------section-2-close-------------------------------- */
+
+
+
+.Explore_btn_txt h1{
+    text-align: center;
+    font-size: 3.125rem;
+}
+
+.madical_Explore_btn{
+    padding-bottom: 100px;
+    padding-top: 60px;
+}
+
+/* ---------------------------------section 3-------------------------------------- */
+
+
+ul#pills-tab {
+    max-width: 717px;
+}
+
+.nav-link{
+    padding: 13px 50px !important;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #a41034 !important;
+}
+
+.nav-pills .nav-link:hover{
+    color: #a41034;
+}
+
+.nav-pills .nav-link {
+    border: 2px solid #a41034;
+  
+    color: #a41034;
+}
+
+.tab-pane {
+    border-radius: 7px;
+    border: 1px solid #e5e5e5;
+    padding: 61px;
+    max-width: 86%;
+}
+
+.java_btns_colm {
+    margin-bottom: 45px;
+    margin-top: 70px;
+}
+
+.java_tabs_title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.java_paragraph{
+    font-weight: bold;
+}
+.javatabs_cont button {
+    padding: 14px;
+    border: none;
+    background-color: #a41034;
+    font-weight: 600;
+    border-radius: 7px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.java_tabs img{
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+
+    li.nav-item {
+        margin: 10px auto;
+    }
+}
+/* ---------------------------------section 3-------------------------------------- */
+
+/* --------------------------------footer start--------------------------------- */
+
+.main_footer{
+    background-color:#a42825;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    padding-left: 81px;
+    padding-right: 64px;
+}
+.footer_logo img {
+    width: 172px;
+}
+
+.footer_cnt{
+    color: white;
+    margin-top: 20px;
+    padding-left: 16px;
+}
+
+.footer_cnt span a{
+    text-decoration: none;
+    color: white;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: .5rem;
+}
+
+.list-inline-item a{
+    color: white;
+}
+
+ul.social_links li a {
+    text-decoration: none;
+    display: flex;
+    border: 2px solid white;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    color: var(--theme-color-info);
+}
+
+ul#menu-footer-left-menu li::before{
+    content: "";
+    background: white;
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.menu-item {
+    margin: 10px 0;
+}
+
+ul#menu-footer-left-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer_menu_titl{
+    font-size: 2.188rem;
+    font-weight: bold;
+    color: white;
+}
+.copyright_flx {
+    padding: 0px 104px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright_flx_box {
+    margin: 0;
+    font-size: 12px;
+    color: #a1a1a5;
+}
+
+.copyright{
+    padding: 24px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .main_footer {
+        background-color: #a42825;
+        padding-top: 53px;
+        padding-bottom: 25px;
+        padding-left: 53px;
+        padding-right: 93px;
+    }
+
+    .copyright_flx {
+        padding: 0px 31px;
+    }
+
+    .copyright_flx_box{
+        font-size: 13px;
+        margin: 7px;
+    }
+.copyright{
+    padding: 11px;
+}
+}
+
+
+
+
+
+
+
+/* -----------------------------About Us Page------------------------------ */
+
+
+.about_container{
+    background-image: url(metrocreateimages/crem-hp-back.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px;
+}
+
+
+.about_container h1{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.About_contents {
+    padding: 97px 189px;
+}
+
+
+
+
+/* More Pages-- styles sheet------------------------------------ */
+
+/* *{
+    box-sizing: border-box;
+    margin: 0px ;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    /* border: 1px solid red; */
+    */
+ 
+    .video-section{
+        background: url(../images/backgound/crem-hp-back.jpeg) no-repeat;
+        height: 60vh;
+        margin-bottom: 200px;
+    }
+    .youtube-video {
+        width: 100%;
+        transform: translate(0px,100px) !important;
+    }
+    .mini-patch-video{
+        border-radius: 30px;
+        width: 85%;
+        height:  80vh;
+    
+    }
+    .order{
+        background: #FFFFFF;
+    
+    }
+    .ordering,.Patient{
+        font-size: 17px;
+        font-weight: 700;
+        
+    }
+    .order-col,.patient-col{
+        align-self: center;
+    }
+    .patient-para p,.ordering-para p{
+        font-size: 15px;
+    }
+    .order-row{
+        margin: 270px 0px 100px 0px !important;
+       
+    }
+    .order-inside {
+        border: 1px solid #DEE2E6;
+    }
+    .Patient-image,.ordering-image {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background:#F5F5F5; 
+        padding: 13px;
+    }
+    .Patient-inside{
+        border-bottom:  1px solid #DEE2E6;
+        border-right: 1px solid #DEE2E6;
+        border-left: 1px solid #DEE2E6;
+    }
+    .ordering-outer,.Patient-outer{
+        align-items: center;
+    }
+    
+
+    .Patient-image,.ordering-image{
+        width: 100px ;
+        height: 100px;
+    }
+    .ordering-para,.Patient-para{
+    align-self: center !important;
+    }
+    .download,.download:hover,.download:focus,.Enrollment-form,.Enrollment-form:hover,.Enrollment-form:focus{
+        text-decoration: none;
+        color: #A41135;
+    }
+    
+    .in-one{
+        font-size: 27px ;
+        font-weight: 700;
+    }
+    .para{
+        font-size: 16px;
+    }
+    
+    @media only screen and (min-width:768px){
+        .in-one{
+            font-size: 34px;
+        }
+        .para{
+            font-size: 17pxFF;
+        }
+    }
+    @media only screen and (min-width:1024px){
+        .mini-patch-video{
+             width: 45%;
+             height: 70vh;
+        }
+      
+        .ordering-para,.Patient-para{
+            width: 50%;
+        }
+        .ordering-outer,.Patient-outer{
+            border-right: 1px solid #DEE2E6;
+        }
+    }
+    /* End of Mini Patch Monitor */
+    
+    /* Blood pressure monitoring */
+    .number-link,.number-link:hover,.number-link:focus{
+        text-decoration: none;
+        color: #000000;
+    }
+    /*  End of Blood pressure monitoring */
+    
+    
+    /* Patient FaQ Start */
+    .patient-faq{
+        background: url(../images/backgound/crem-hp-back.jpeg) no-repeat left;
+        background-size: cover;
+    }
+    .FAQ-head{
+        text-align: center;
+        margin: 120px 0px 120px 0px;
+        font-weight: 700;
+        font-size: 35px;
+        color: #FFFFFF;
+    }
+    .accordion {
+        background-color: #F5F5F5;
+        border: 1px solid rgb(187, 186, 186);
+        border-radius: 10px 10px 10px 10px;
+        margin-bottom: 10px;
+      }
+    
+      .accordion-heading {
+        background-color: white;
+        color: black;
+        padding: 20px 10px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 10px ;
+      }
+    
+      .accordion-content {
+        display: none;
+        padding: 10px;
+      }
+    
+      .accordion-content.active {
+        display: block;
+        border-bottom: none;
+      }
+    
+      .accordion-heading.active {
+        background-color:#A41135;
+        color: white;
+        border: none;
+      }
+    
+      /* Style for icon */
+      .accordion-heading i {
+        float: right;
+      }
+    @media only screen and (min-width:768px){
+          .FAQ-head{
+            font-size: 45px;
+          }
+    
+    }
+    @media only sceen and (min-width:1024px){
+        .FAQ-head{
+            font-size:50px ;
+        }
+    }
+    /* End of patient Faq */
+
+
+
+
+
+
+    /* More pages 3------------------------------------------ */
+
+
+    /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px ;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    /* border: 1px solid red; */
+ */
+ .video-section{
+     background: url(../images/backgound/crem-hp-back.jpeg) no-repeat;
+     height: 60vh;
+     margin-bottom: 200px;
+ }
+ .youtube-video {
+     width: 100%;
+     transform: translate(0px,100px) !important;
+ }
+ .mini-patch-video{
+     border-radius: 30px;
+     width: 85%;
+     height:  80vh;
+ 
+ }
+ .order{
+     background: #FFFFFF;
+ 
+ }
+ .ordering,.Patient{
+     font-size: 17px;
+     font-weight: 700;
+     
+ }
+ .order-col,.patient-col{
+     align-self: center;
+ }
+ .patient-para p,.ordering-para p{
+     font-size: 15px;
+ }
+ .order-row{
+     margin: 270px 0px 100px 0px !important;
+    
+ }
+ .order-inside {
+     border: 1px solid #DEE2E6;
+ }
+ .Patient-image,.ordering-image {
+     height: 150px;
+     width: 150px;
+     border-radius: 50%;
+     background:#F5F5F5; 
+     padding: 13px;
+ }
+ .Patient-inside{
+     border-bottom:  1px solid #DEE2E6;
+     border-right: 1px solid #DEE2E6;
+     border-left: 1px solid #DEE2E6;
+ }
+ .ordering-outer,.Patient-outer{
+     align-items: center;
+ }
+ 
+
+ 
+ .Patient-image,.ordering-image{
+     width: 100px ;
+     height: 100px;
+ }
+ .ordering-para,.Patient-para{
+ align-self: center !important;
+ }
+ .download,.download:hover,.download:focus,.Enrollment-form,.Enrollment-form:hover,.Enrollment-form:focus{
+     text-decoration: none;
+     color: #A41135;
+ }
+ 
+ .in-one{
+     font-size: 27px ;
+     font-weight: 700;
+ }
+ .para{
+     font-size: 16px;
+ }
+ .accordion-menu {
+     display: inline-block;
+     /* position: relative;
+     left: 50%; */
+     /* margin: 150px 0; */
+     /* transform: translate(-50%, 0); */
+     /* max-width: 300px; */
+     /* padding: 10px 20px 20px; */
+     border-radius: 5px;
+ }
+ .accordion-head{
+     font-size: 18px;
+     line-height: 34px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     display: block;
+     margin: 0;
+     cursor: pointer;
+     color: #000000;
+ }
+ .accordion-inner {
+     color: #000000;
+     font-size: 16px;
+     /* line-height: 26px; */
+     /* letter-spacing: 1px; */
+     /* position: relative; */
+     overflow: hidden;
+     /* max-height: 800px; */
+     /* opacity: 1; */
+     /* transform: translate(0, 0); */
+     margin-top: 14px;
+     /* z-index: 2; */
+ }
+ .accordian-main {
+     list-style: none;
+     perspective: 900;
+     padding: 0 20px 10px;
+     margin: 0;
+     background-color: #fff;
+     border-radius: 5px;
+     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(255, 255, 255, 0.19);
+ }
+ .accordian-main li {
+     position: relative;
+     padding: 0;
+     margin: 0;
+     padding-bottom: 4px;
+     padding-top: 18px;
+     border-top: 1px dotted #dce7eb;
+ }
+ .accordian-main li:nth-child(1) {
+     border: none;
+ }
+ .accordian-main li:nth-of-type(1) {
+     animation-delay: 0.5s;
+ }
+ .accordian-main li:nth-of-type(2) {
+     animation-delay: 0.75s;
+ }
+ .accordian-main li:nth-of-type(3) {
+     animation-delay: 1s;
+ }
+ .accordian-main li:last-of-type {
+     padding-bottom: 0;
+ }
+ .accordian-main li .arrow {
+     position: absolute;
+     transform: translate(-6px, 0);
+     margin-top: 16px;
+     right: 0;
+ }
+ .accordian-main li .fas {
+     color: #f6483b;
+     font-size: 15px;
+     margin-right: 10px;
+ }
+ .accordian-main li .arrow:before, .accordian-main li .arrow:after {
+     content: "";
+     position: absolute;
+     background-color: #f6483b;
+     width: 3px;
+     height: 9px;
+ }
+ .accordian-main li .arrow:before {
+     transform: translate(-2px, 0) rotate(45deg);
+ }
+ .accordian-main li .arrow:after {
+     transform: translate(2px, 0) rotate(-45deg);
+ }
+ .accordian-main li input[type=checkbox] {
+     position: absolute;
+     cursor: pointer;
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+     opacity: 0;
+ }
+ .accordian-main li input[type=checkbox]:checked ~ .accordion-inner {
+     margin-top: 0;
+     max-height: 0;
+     opacity: 0;
+     transform: translate(0, 50%);
+ }
+ .accordian-main li input[type=checkbox]:checked ~ .arrow:before {
+     transform: translate(2px, 0) rotate(45deg);
+ }
+ .accordian-main li input[type=checkbox]:checked ~ .arrow:after {
+     transform: translate(-2px, 0) rotate(-45deg);
+ }
+ .transition, .accordion-inner, .accordian-main li .arrow:before, .accordian-main li .arrow:after {
+     transition: all 0.25s ease-in-out;
+ }
+ .flipIn, h1, .accordian-main li {
+     animation: flipdown 0.5s ease both;
+ }
+ .no-select, h2 {
+     -webkit-tap-highlight-color: transparent;
+     -webkit-touch-callout: none;
+     user-select: none;
+ }
+ .accordion-head:active{
+     background: #A41135;
+ }
+ @keyframes flipdown {
+     0% {
+         opacity: 0;
+         transform-origin: top center;
+         transform: rotateX(-90deg);
+    }
+     5% {
+         opacity: 1;
+    }
+     80% {
+         transform: rotateX(8deg);
+    }
+     83% {
+         transform: rotateX(6deg);
+    }
+     92% {
+         transform: rotateX(-3deg);
+    }
+     100% {
+         transform-origin: top center;
+         transform: rotateX(0deg);
+    }
+ }
+  .outer-head:hover{
+     background: #A41135;
+ }
+ @media only screen and (min-width:768px){
+     .in-one{
+         font-size: 34px;
+     }
+     .para{
+         font-size: 17pxFF;
+     }
+ }
+ @media only screen and (min-width:1024px){
+     .mini-patch-video{
+          width: 45%;
+          height: 70vh;
+     }
+   
+     .ordering-para,.Patient-para{
+         width: 50%;
+     }
+     .ordering-outer,.Patient-outer{
+         border-right: 1px solid #DEE2E6;
+     }
+ }
+ /* End of Mini Patch Monitor */
+ 
+ /* Blood pressure monitoring */
+ .number-link,.number-link:hover,.number-link:focus{
+     text-decoration: none;
+     color: #000000;
+ }
+ /*  End of Blood pressure monitoring */
+ 
+ 
+ /* Patient FaQ Start */
+ .patient-faq{
+     background: url(../images/backgound/crem-hp-back.jpeg) no-repeat left;
+     background-size: cover;
+ }
+ .FAQ-head{
+     text-align: center;
+     margin: 120px 0px 120px 0px;
+     font-weight: 700;
+     font-size: 35px;
+     color: #FFFFFF;
+ }
+ .accordion {
+     background-color: #F5F5F5;
+     border: 1px solid rgb(187, 186, 186);
+     border-radius: 10px 10px 10px 10px;
+     margin-bottom: 10px;
+   }
+ 
+   .accordion-heading {
+     background-color: white;
+     color: black;
+     padding: 20px 10px;
+     font-weight: 600;
+     cursor: pointer;
+     border-radius: 10px ;
+   }
+ 
+   .accordion-content {
+     display: none;
+     padding: 10px;
+   }
+ 
+   .accordion-content.active {
+     display: block;
+     border-bottom: none;
+   }
+ 
+   .accordion-heading.active {
+     background-color:#A41135;
+     color: white;
+     border: none;
+   }
+ 
+   /* Style for icon */
+   .accordion-heading i {
+     float: right;
+   }
+ @media only screen and (min-width:768px){
+       .FAQ-head{
+         font-size: 45px;
+       }
+ 
+ }
+ @media only sceen and (min-width:1024px){
+     .FAQ-head{
+         font-size:50px ;
+     }
+ }
+ /* End of patient Faq */
+ 
+    
